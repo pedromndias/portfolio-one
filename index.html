@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- The next line makes sure that the website works responsively on small devices: -->
+    <link rel="icon" type="image/png" href="./images/code-logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The next line makes sure the website works the same in all browsers: -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Pedro Flores Dias</title>
+</head>
+<body>
+    
+    <nav class="nav" id="nav">
+        <img id="exit-menu" class="menu--logo" src="./images/x-logo.png" alt="exit logo">
+        <ul class="nav--side-menu-list">
+            <li class="nav--item"><a href="#home" class="nav--link">HOME</a></li>
+            <li class="nav--item"><a href="#projects" class="nav--link">PROJECTS</a></li>
+            <li class="nav--item"><a href="#contact" class="nav--link">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <header class="header">
+        <div class="menu">
+            <a href="#">
+                <img class="menu--pf-logo" src="./images/pf-logo-2.png" alt="pf logo">
+            </a>
+            <img id="open-menu" class="menu--logo" src="./images/menu-logo.png" alt="menu logo">
+            <ul class="menu--list">
+                <li class="menu--list-item"><a href="#home" class="menu--list-link">HOME</a></li> / 
+                <li class="menu--list-item"><a href="#projects" class="menu--list-link">PROJECTS</a></li> / 
+                <li class="menu--list-item"><a href="#contact" class="menu--list-link">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="header--hero" id="home">
+            <h1>Hello there, I am <span class="header--pedro">Pedro</span></h1>
+            <img class="profile-pic" src="./images/pedro-color-round-1.png" alt="pedro smilling">
+        </div>
+    </header>
+    <main class="main" id="projects">
+        <h2>Here's some of my work:</h2>
+        <section class="main-container">
+            <div class="main-container--project">
+                <img class="project--img" src="./images/plane1.jpg" alt="Project 1">
+                <h3 class="project--title">Project 1</h3>
+                <a class="project--link-live" href="#">Take a look at it live</a>
+                <a class="project--link-github" href="#">Inpect the source code</a>
+            </div>
+            <div class="main-container--project">
+                <img class="project--img" src="./images/plane2.jpg" alt="Project 2">
+                <h3 class="project--title">Project 2</h3>
+                <a class="project--link-live" href="#">Take a look at it live</a>
+                <a class="project--link-github" href="#">Inpect the source code</a>
+            </div>
+            <div class="main-container--project">
+                <img class="project--img" src="./images/plane3.jpg" alt="Project 3">
+                <h3 class="project--title">Project 3</h3>
+                <a class="project--link-live" href="#">Take a look at it live</a>
+                <a class="project--link-github" href="#">Inpect the source code</a>
+            </div>
+            <div class="main-container--project">
+                <img class="project--img" src="./images/plane4.jpg" alt="Project 4">
+                <h3 class="project--title">Project 4</h3>
+                <a class="project--link-live" href="#">Take a look at it live</a>
+                <a class="project--link-github" href="#">Inpect the source code</a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" id="contact">
+        <div class="footer--content">
+            <div class="footer--name-div">
+                <img class="footer--pf-logo" src="./images/pf-logo-1.png" alt="pf logo">
+                <h3 class="footer--name">Pedro Flores</h3>
+            </div>
+            <div class="footer--logos">
+                <a class="logo-link" href="https://www.linkedin.com/in/pedro-flores-dias-030100191/" target="_blank">
+                    <img class="logo-img" src="./images/linkedin-logo.png" alt="linkedin icon">
+                </a>
+                <a class="logo-link" href="https://https://github.com/pedromndias" target="_blank">
+                    <img class="logo-img" src="./images/github-logo.png" alt="github icon">
+                </a>
+                <a class="logo-link" href="https://twitter.com/BlockchainDias" target="_blank">
+                    <img class="logo-img" src="./images/twitter-logo.png" alt="twitter icon">
+                </a>
+                <a class="logo-link" href="https://en.wikipedia.org/wiki/Barcelona" target="_blank">
+                    <img class="logo-img" src="./images/globe-logo.png" alt="globe icon">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
