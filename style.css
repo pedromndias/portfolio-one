@@ -98,7 +98,8 @@ nav ul li a {
 
 /* TOP MENU */
 
-.menu {
+.menu,
+.blog--menu {
     margin: 0;
     padding: 15px 10px;
     display: flex;
@@ -107,7 +108,13 @@ nav ul li a {
     background-color: #F7F7F7;
     position: fixed;
     width: 100%;
+    z-index: 5;
 }
+
+.blog--menu {
+    padding: 0 10px;
+}
+
 
 .menu--list {
     display: none;
@@ -115,16 +122,25 @@ nav ul li a {
     color: rgb(224, 221, 221);
 }
 
-.menu--list li {
+.blog--menu--list {
+    display: flex;
+    margin-left: 0;
+}
+
+.menu--list li,
+.blog--menu--list li{
     list-style: none;
     padding: 0 2px;
-    
     font-weight: 700;
 }
 
 .menu--list li a {
     text-decoration: none;
     color: rgb(217, 217, 217);
+}
+
+.blog--menu--list li a {
+    color: #0c85f5;
 }
 
 .menu--logo {
@@ -168,21 +184,25 @@ h3 {
 
 @keyframes h1-load {
     0% {
-        transform: translateX(-100%)
+        transform: translateX(-100%);
+        opacity: 0;
     }
 
     100% {
         transform: translateX(0);
+        opacity: 1;
     }
 }
 
 @keyframes p-load {
     0% {
-        transform: translateX(100%)
+        transform: translateX(100%);
+        opacity: 0;
     }
 
     100% {
         transform: translateX(0);
+        opacity: 1;
     }
 }
 
@@ -216,6 +236,8 @@ h3 {
     text-shadow: 0 0 1px rgb(0, 0, 0);
     line-height: 1.2em;
     animation: h1-load 1s ease-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 
 .header--p {
@@ -224,6 +246,8 @@ h3 {
     text-align: center;
     font-size: 1.5em;
     animation: p-load 1s ease-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 
 .profile-pic {
@@ -360,11 +384,16 @@ h3 {
         height: 150px;
     }
 
-    .menu {
+    .menu,
+    .blog--menu {
         padding: 0 10px;
         position: fixed;
         width: 100%;
         background: linear-gradient(315deg, rgba(12,133,245,1) 0%, rgba(0,212,255,1) 100%);
+    }
+
+    .blog--menu--list li a {
+        color: rgb(217, 217, 217);
     }
 
     .menu--logo {
