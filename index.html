@@ -35,7 +35,7 @@
     </nav>
 
     <header class="header">
-        <div class="menu">
+        <div class="menu" role="menu">
             <a href="#">
                 <img class="menu--pf-logo" src="./images/pf-logo-2.png" alt="pf logo">
             </a>
@@ -48,7 +48,7 @@
                 <li class="menu--list-item"><a href="#contact" class="menu--list-link">CONTACT</a></li>
             </ul>
         </div>
-        <div class="header--hero" id="home">
+        <div class="header--hero" id="home" role="heading">
             <h1 class="header--h1">Hello there, I am <span class="header--pedro">Pedro</span></h1>
             <img class="profile-pic" src="./images/pedro-color-round-1.png" alt="pedro smilling">
             <p class="header--p">I love to build stuff!</p>
@@ -57,13 +57,16 @@
     <main class="main" id="projects">
         <h2>Here's some of my work:</h2>
         <section class="main-container">
-            <div class="main-container--project">
+            <div class="main-container--project" role="banner">
                 <a href="./projects/todo.html" class="project--link">
-                    <img class="project--img" src="./images/todo-localstorage-typescript-project.png" alt="Todo project">
+                    <div role="img" class="project--img-container-one">
+                        <p>To Do List</p>
+                    </div>
                     <h3 class="project--link-h3" class="project--title">To Do List with localStorage and TypeScript</h3>
                 </a>
                 <a class="project--link-live" href="https://benevolent-bienenstitch-0d652b.netlify.app/" target="_blank">Take a look at it live</a>
                 <a class="project--link-github" href="https://github.com/pedromndias/todo-localstorage-typescript" target="_blank">Inpect the source code</a>
+                <a class="main-container--p" href="./projects/todo.html">Click for more..</a>
             </div>
             <div class="main-container--project">
                 <img class="project--img" src="./images/plane2.jpg" alt="Project 2">
@@ -91,7 +94,7 @@
                 <img class="footer--pf-logo" src="./images/pf-logo-1.png" alt="pf logo">
                 <h3 class="footer--name">Pedro Flores</h3>
             </div>
-            <div class="footer--logos">
+            <div class="footer--logos" role="contentinfo">
                 <a class="logo-link" href="https://www.linkedin.com/in/pedro-flores-dias-030100191/" target="_blank">
                     <img class="logo-img" src="./images/linkedin-logo.png" alt="linkedin icon">
                 </a>
