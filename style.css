@@ -338,9 +338,16 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("./images/todo-localstorage-typescript-project.png");
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+}
+
+.project--img-container-one {
+    background-image: url("./images/todo-localstorage-typescript-project.png");
+}
+
+.project--img-container-two {
+    background-image: url("./images/password-generator-project.png");
 }
 
 .project--img-container-one p,
@@ -546,7 +553,7 @@ h3 {
     }
 
     .profile-pic {
-        height: 150px;
+        height: 300px;
     }
 
     .menu,
