@@ -162,6 +162,11 @@ nav ul li a {
 .blog--menu--list {
     display: flex;
     margin-left: 0;
+    color: rgb(217, 217, 217);
+}
+
+.blog--menu--list li a {
+    text-decoration: none;
 }
 
 .menu--list {
@@ -305,6 +310,48 @@ h3 {
     animation-fill-mode: forwards;
     opacity: 0;
 }
+
+/* ABOUT ME */
+
+.about-and-footer {
+    min-height: 100vh;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me {
+    padding: 60px 20px;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-me--links {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.about-me--links:hover,
+.about-me--links:focus {
+    color: #388659;
+}
+
+.about-me--links {
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
+}
+
+.about-me--links:hover,
+.about-me--links:focus {
+    color: #388659;
+}
+
 
 /* PROJECTS */
 
@@ -492,6 +539,46 @@ h3 {
     transform: scale(1.2);
 }
 
+/* CONTACT MODAL */
+.contact--modal {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.modal-inner {
+    background: white;
+    padding: 20px;
+    max-height: 300px;
+    margin: 0 auto;
+    max-width: 600px;
+    position: relative;
+    top: 30%;
+    border-radius: 5px;
+}
+
+.modal-inner h2 {
+    margin-bottom: 40px;
+}
+
+.modal--close-btn {
+    background-color: rgb(56, 134, 89, 0.7);
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 7px 20px;
+    text-shadow: none;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    margin-top: 70px;
+}
+
 /* PROJECT PAGE */
 
 .project-page--main {
@@ -574,5 +661,10 @@ h3 {
 
     .menu--list {
         display: flex;
+    }
+
+    .about-me {
+        max-width: 600px;
+        margin: auto;
     }
 }

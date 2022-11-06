@@ -4,6 +4,12 @@ const openMenu = document.querySelector("#open-menu")
 const nav = document.querySelector("#nav")
 const exitMenu = document.querySelector("#exit-menu")
 const navLinks = document.querySelectorAll(".nav--side-menu-list")
+const getInTouch = document.querySelector("#get-in-touch")
+const contactLink = document.querySelector("#contact-link")
+const contactLinkNav = document.querySelector("#contact-link-nav")
+const contactModal = document.querySelector(".contact--modal")
+const modalInner = document.querySelector("#modal-inner")
+const modalCloseBtn = document.querySelector("#modal--close-btn")
 
 // We will save the different profile pics in variables
 const url1 = "./images/pedro-color-round-1.png"
@@ -46,4 +52,27 @@ navLinks.forEach(link => {
     link.addEventListener('click', () => {
         nav.classList.remove("open-nav")
     })
+})
+
+// If we click the contact link a modal will open with my contact details:
+contactLink.addEventListener("click", () => {
+    contactModal.style.display = "block"
+})
+contactLinkNav.addEventListener("click", () => {
+    contactModal.style.display = "block"
+})
+getInTouch.addEventListener("click", () => {
+    contactModal.style.display = "block"
+})
+
+// Let's create an event listener for the document so we can close the modal by clicking outside of the modal:
+// document.addEventListener("click", (e)=> {
+    
+//     if((contactModal.style.display === "block") && (e.target.id !== "modal-inner") && (e.target.id !== "contact-link-nav") && (e.target.id !== "contact-link")  && (e.target.id !== "get-in-touch")){
+//         contactModal.style.display = "none"
+//     }
+// })
+
+modalCloseBtn.addEventListener("click", () => {
+    contactModal.style.display = "none"
 })

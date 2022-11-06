@@ -24,7 +24,7 @@
             <li class="nav--item"><a href="#about" class="nav--link">ABOUT ME</a></li>
             <li class="nav--item"><a href="#projects" class="nav--link">PROJECTS</a></li>
             <li class="nav--item"><a href="./blog.html" class="nav--link">BLOG</a></li>
-            <li class="nav--item"><a href="#contact" class="nav--link">CONTACT</a></li>
+            <li class="nav--item"><a href="#contact" class="nav--link" id="contact-link-nav">CONTACT ME</a></li>
         </ul>
     </nav>
 
@@ -39,7 +39,7 @@
                 <li class="menu--list-item"><a href="#about" class="menu--list-link">ABOUT ME</a></li> /
                 <li class="menu--list-item"><a href="#projects" class="menu--list-link">PROJECTS</a></li> / 
                 <li class="menu--list-item"><a href="./blog.html" class="menu--list-link">BLOG</a></li> / 
-                <li class="menu--list-item"><a href="#contact" class="menu--list-link">CONTACT</a></li>
+                <li class="menu--list-item"><a href="#contact" id="contact-link" class="menu--list-link">CONTACT ME</a></li>
             </ul>
         </div>
         <div class="header--hero" id="home" role="heading">
@@ -48,6 +48,7 @@
             <p class="header--p">I love to build stuff!</p>
         </div>
     </header>
+
     <main class="main" id="projects">
         <h2>Here's some of my work:</h2>
         <section class="main-container">
@@ -87,28 +88,51 @@
             </div>
         </section>
     </main>
-    <footer class="footer" id="contact">
-        <div class="footer--content">
-            <div class="footer--name-div">
-                <img class="footer--pf-logo" src="./images/pf-logo-1.png" alt="pf logo">
-                <h3 class="footer--name">Pedro Flores</h3>
-            </div>
-            <div class="footer--logos" role="contentinfo">
-                <a class="logo-link" href="https://www.linkedin.com/in/pedro-flores-dias-030100191/" target="_blank">
-                    <img class="logo-img" src="./images/linkedin-logo.png" alt="linkedin icon">
-                </a>
-                <a class="logo-link" href="https://github.com/pedromndias" target="_blank">
-                    <img class="logo-img" src="./images/github-logo.png" alt="github icon">
-                </a>
-                <a class="logo-link" href="https://twitter.com/fiorigiorni" target="_blank">
-                    <img class="logo-img" src="./images/twitter-logo.png" alt="twitter icon">
-                </a>
-                <a class="logo-link" href="https://en.wikipedia.org/wiki/Barcelona" target="_blank">
-                    <img class="logo-img" src="./images/globe-logo.png" alt="globe icon">
-                </a>
-            </div>
+
+    <section class="contact--modal" id="contact--modal">
+        <div class="modal-inner" id="modal-inner">
+            <h2>Contact Me</h2>
+            <p>
+                You can contact me through my <a class="about-me--links" href="https://www.linkedin.com/in/pedro-flores-dias-030100191/" target="_blank">LinkedIn</a> or my email <a class="about-me--links" href="mailto:pedromndias@gmail.com">pedromndias@gmail.com</a>
+            </p>
+            <button class="modal--close-btn" id="modal--close-btn">Close</button>
         </div>
-    </footer>
+    </section>
+
+    <div class="about-and-footer">
+        <section class="about-me" id="about">
+            <p>
+                I am Portuguese and currently based in Barcelona. I have been passionate about coding for some years and started studying it in 2019. As time passed by, I have turned this passion from a hobby to a life objective, as I have decided to become a full-time Web Developer. Take a look at my <a href="./blog.html" class="about-me--links">coding journey blog</a>.
+            </p>
+            <p>
+                I am a creative person, with the ability to relate and communicate effectively with people of different ages, social and cultural backgrounds. I understand the importance of teamwork and adapt very well to a variety of environments due to the different courses and activities carried out so far. I speak and write different languages like Portuguese, English, Spanish and Italian since I lived in Rome for two years.
+            </p>
+            <p><span class="about-me--links" id="get-in-touch">Get in touch</span> and let's build something amazing together!</p>
+        </section>
+
+        <footer class="footer" id="contact">
+            <div class="footer--content">
+                <div class="footer--name-div">
+                    <img class="footer--pf-logo" src="./images/pf-logo-1.png" alt="pf logo">
+                    <h3 class="footer--name">Pedro Flores</h3>
+                </div>
+                <div class="footer--logos" role="contentinfo">
+                    <a class="logo-link" href="https://www.linkedin.com/in/pedro-flores-dias-030100191/" target="_blank">
+                        <img class="logo-img" src="./images/linkedin-logo.png" alt="linkedin icon">
+                    </a>
+                    <a class="logo-link" href="https://github.com/pedromndias" target="_blank">
+                        <img class="logo-img" src="./images/github-logo.png" alt="github icon">
+                    </a>
+                    <a class="logo-link" href="https://twitter.com/fiorigiorni" target="_blank">
+                        <img class="logo-img" src="./images/twitter-logo.png" alt="twitter icon">
+                    </a>
+                    <a class="logo-link" href="https://en.wikipedia.org/wiki/Barcelona" target="_blank">
+                        <img class="logo-img" src="./images/globe-logo.png" alt="globe icon">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
 
     <script src="app.js"></script>
 </body>
