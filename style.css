@@ -314,7 +314,7 @@ h3 {
 /* ABOUT ME */
 
 .about-and-footer {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     margin-bottom: 0;
     padding-bottom: 0;
     display: flex;
@@ -578,6 +578,16 @@ h3 {
     cursor: pointer;
     margin-top: 70px;
 }
+
+.modal--close-btn:hover,
+.modal--close-btn:focus {
+    background-color: rgb(56, 134, 89, 0.5);
+}
+
+.modal--close-btn:active {
+    background-color: #0c85f5;
+}
+
 
 /* PROJECT PAGE */
 
