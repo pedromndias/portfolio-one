@@ -10,3 +10,9 @@ contactLink.addEventListener("click", () => {
 modalCloseBtn.addEventListener("click", () => {
     contactModal.style.display = "none"
 })
+
+window.addEventListener("click", function(e) {
+    if(e.target === contactModal) {
+        contactModal.style.display = "none"
+    }
+})

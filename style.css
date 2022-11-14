@@ -561,6 +561,9 @@ h3 {
     position: relative;
     top: 30%;
     border-radius: 5px;
+
+    animation-name: animateModal;
+    animation-duration: .4s;
 }
 
 .modal-inner h2 {
@@ -586,6 +589,18 @@ h3 {
 
 .modal--close-btn:active {
     background-color: #0c85f5;
+}
+
+@keyframes animateModal {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+
+    to {
+        top: 30%;
+        opacity: 1;
+    }
 }
 
 

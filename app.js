@@ -65,14 +65,13 @@ getInTouch.addEventListener("click", () => {
     contactModal.style.display = "block"
 })
 
-// Let's create an event listener for the document so we can close the modal by clicking outside of the modal:
-// document.addEventListener("click", (e)=> {
-    
-//     if((contactModal.style.display === "block") && (e.target.id !== "modal-inner") && (e.target.id !== "contact-link-nav") && (e.target.id !== "contact-link")  && (e.target.id !== "get-in-touch")){
-//         contactModal.style.display = "none"
-//     }
-// })
-
 modalCloseBtn.addEventListener("click", () => {
     contactModal.style.display = "none"
+})
+
+// Let's create an event listener for the document so we can close the modal by clicking outside of the modal:
+window.addEventListener("click", function(e) {
+    if(e.target === contactModal) {
+        contactModal.style.display = "none"
+    }
 })
