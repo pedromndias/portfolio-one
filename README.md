@@ -13,4 +13,4 @@ This is my portfolio’s website, which I made from scratch using just HTML, CSS
 - From every page, there is a link to go back to the homepage or to the contact section.
 
 ## Running the project:
-This project is live on the following link: [https://dreamy-sunshine-1a96cd.netlify.app/].
+This project is live on the following link: [https://webpedro.netlify.app/].
