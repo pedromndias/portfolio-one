@@ -53,6 +53,7 @@ body {
     color: #F7F7F7;
     background-color: #8cff00;
     padding: 40px 0;
+    box-shadow: 0px -2px 5px gray;
 }
 
 /* BLOG */
@@ -153,6 +154,7 @@ nav ul li a {
     position: fixed;
     width: 100%;
     z-index: 5;
+    box-shadow: 0px 2px 5px gray;
 }
 
 .blog--menu {
@@ -378,7 +380,9 @@ h3 {
 .project--img-container-one,
 .project--img-container-two,
 .project--img-container-three,
-.project--img-container-four {
+.project--img-container-four,
+.project--img-container-five,
+.project--img-container-six {
     max-width: 100%;
     min-height: 300px;
     transition: 0.5s;
@@ -387,20 +391,36 @@ h3 {
     align-items: center;
     background-position: center;
     background-size: contain;
+    background-repeat: no-repeat;
+
 }
 
 .project--img-container-one {
-    background-image: url("./images/todo-localstorage-typescript-project.png");
+    background-image: url("./images/appilime-project.jpg");
 }
 
 .project--img-container-two {
+    background-image: url("./images/imperial-archives-project.jpg");
+}
+.project--img-container-three {
+    background-image: url("./images/lets-ride-to-france-game.jpg");
+}
+.project--img-container-four {
+    background-image: url("./images/todo-localstorage-typescript-project.png");
+}
+.project--img-container-five {
+    background-image: url("./images/password-generator-project.png");
+}
+.project--img-container-six {
     background-image: url("./images/password-generator-project.png");
 }
 
 .project--img-container-one p,
 .project--img-container-two p,
 .project--img-container-three p,
-.project--img-container-four p {
+.project--img-container-four p,
+.project--img-container-five p,
+.project--img-container-six p {
     opacity: 0;
     transform: scale(0);
     transition: 0.8s;
@@ -411,14 +431,18 @@ h3 {
 .project--img-container-one:hover,
 .project--img-container-two:hover,
 .project--img-container-three:hover,
-.project--img-container-four:hover {
+.project--img-container-four:hover,
+.project--img-container-five:hover,
+.project--img-container-six:hover {
     box-shadow: 0 0 0 200px rgba(0,0,0,0.8) inset;
 }
 
 .project--img-container-one:hover p,
 .project--img-container-two:hover p,
 .project--img-container-three:hover p,
-.project--img-container-four:hover p {
+.project--img-container-four:hover p,
+.project--img-container-five:hover p,
+.project--img-container-six:hover p {
     opacity: 1;
     transform: scale(1)
 }
@@ -498,6 +522,8 @@ h3 {
 
 .project--title {
     color:#0c85f5;
+    font-weight: 400;
+    letter-spacing: 0.8px;
 }
 
 /* FOOTER */
@@ -510,6 +536,7 @@ h3 {
 
 .footer--name {
     color: #0c85f5;
+    letter-spacing: 0.9px;
 }
 
 .footer--logos {
@@ -618,6 +645,7 @@ h3 {
 }
 .project-page--h1 {
     line-height: 1.2em;
+    margin: 70px auto;
 }
 
 .project-page--img {
@@ -662,6 +690,7 @@ h3 {
 
     .main-container--project {
         margin: 10px;
+        width: 450px;
     }
 
     .profile-pic {
